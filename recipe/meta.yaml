@@ -26,7 +26,6 @@ requirements:
 test:
   imports:
     - mt940
-    - mt940_tests
   commands:
     - pip check
   requires:
