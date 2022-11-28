@@ -1,5 +1,5 @@
 {% set name = "mt940" %}
-{% set version = "4.26.0" %}
+{% set version = "4.27.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/mt-940/mt-940-{{ version }}.tar.gz
-  sha256: 1cbe7a4d764d9235676a9d17221053ff10c0d8df3434b08ba6fb979315eeeb31
+  sha256: 2cbe02462a22a3ade0a57aecbab56e72b905810ac48748193d9efd636b64ffdd
 
 build:
   number: 0
