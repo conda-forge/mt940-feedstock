@@ -1,11 +1,11 @@
-About mt940
-===========
+About mt940-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mt940-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/WoLpH/mt940
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mt940-feedstock/blob/main/LICENSE.txt)
 
 Summary: A library to parse MT940 files and returns smart Python collections for statistics and manipulation.
 
