@@ -1,0 +1,48 @@
+schema_version: 1
+
+context:
+  name: mt940
+  version: "4.30.0"
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/mt-940/mt-940-${{ version }}.tar.gz
+  sha256: da14e2ec84d6c6e85604d2a6b8a800b08ec6000351acde501c41eb662819295c
+
+build:
+  number: 2
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv
+
+requirements:
+  host:
+    - pip
+    - python ${{ python_min }}.*
+    - setuptools >=39.1.0
+  run:
+    - python >=${{ python_min }}
+
+tests:
+  - python:
+      imports:
+        - mt940
+      pip_check: true
+      python_version: ${{ python_min }}
+
+about:
+  license: BSD-3-Clause
+  license_file: LICENSE
+  summary: A library to parse MT940 files and returns smart Python collections for statistics and manipulation.
+  description: |
+    A library to parse MT940 files and returns smart Python collections
+    for statistics and manipulation.
+  homepage: https://github.com/WoLpH/mt940
+  repository: https://github.com/WoLpH/mt940
+  documentation: https://mt940.readthedocs.io
+
+extra:
+  recipe-maintainers:
+    - jan-janssen
