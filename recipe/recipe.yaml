@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: mt940
-  version: "5.1.0"
+  version: "5.1.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/mt-940/mt_940-${{ version }}.tar.gz
-  sha256: 6a6a3312e659b2ad7dde14b3f4b05b325dc2b3326fd16685686d46dd217e0d05
+  sha256: 8257d61811c05df80236514a85c52142aa1e8403198542a6267f75158303d9cc
 
 build:
   number: 0
